@@ -1,0 +1,4 @@
+﻿  GSD.cpp
+D:\DevResults\GitProjs\GSD\GSD\GSD\DrawMap.h(19,17): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+D:\DevResults\GitProjs\GSD\GSD\GSD\DrawMap.h(19,20): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+  GSD.vcxproj -> D:\DevResults\GitProjs\GSD\GSD\x64\Debug\GSD.exe
