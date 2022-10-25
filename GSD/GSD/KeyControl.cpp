@@ -12,7 +12,7 @@ int KeyControl::KeyInput(char key)
 		return LEFT;
 	case 'd':
 		return RIGHT;
-	default:
-		return -1;
+	case ' ':
+		return SELECT;
 	}
 }

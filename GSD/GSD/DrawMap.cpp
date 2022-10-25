@@ -1,14 +1,20 @@
 #include "DrawMap.h"
+#include "KeyControl.h"
 
-
-DrawMap::DrawMap()
-{
-
-}
 
 void DrawMap::Init()
 {
     system("mode con cols=100 lines=80 | title 겜시디");
+
+
+    //커서관련 Visible TRUE(보임) FALSE(숨김)
+    HANDLE hConsole;
+    CONSOLE_CURSOR_INFO ConsoleCursor;
+    hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+    ConsoleCursor.bVisible = 0;
+    ConsoleCursor.dwSize = 1;
+    SetConsoleCursorInfo(hConsole, &ConsoleCursor);
+    //커서관련 끝
 }
 
 void DrawMap::GridDraw(int start_x, int start_y, int width, int height)
@@ -43,19 +49,74 @@ void DrawMap::GridDraw(int start_x, int start_y, int width, int height)
 
 
 
-void DrawMap::MenuDraw(int start_x, int start_y)
+int DrawMap::MenuDraw(int start_x, int start_y)
 {
-    gotoxy(start_x, start_y);
-    cout << "Start Game";
+    KeyControl kc;
+    int current_x = start_x;
+    int current_y = start_y;
+
+    //메뉴 출력
+    gotoxy(start_x-2, start_y);
+    cout << "> ";
+    COLOR(2);
+    cout<<"Start Game";
     gotoxy(start_x, start_y+1);
     cout << "How To Play";
     gotoxy(start_x, start_y+2);
     cout << "Option";
     gotoxy(start_x, start_y+3);
     cout << "Quit Game";
+    COLOR(7);
+    //
 
+    //메뉴 이동( w,a,s,d + 스페이스바로 선택)
+    while (1)
+    {
+        switch (kc.KeyInput(_getch()))
+        {
+            case UP:
+            {
+                if (current_y > start_y)
+                {
+                    gotoxy(start_x - 2, current_y);
+                    cout << " ";
+                    gotoxy(start_x - 2, --current_y);
+                    cout << ">";
+                }
+                break;
+            }
+            case DOWN:
+                if (current_y < start_y+3)
+                {
+                    gotoxy(start_x - 2, current_y);
+                    cout << " ";
+                    gotoxy(start_x - 2, ++current_y);
+                    cout << ">";
+                }
+                break;
+            case SELECT:
+                {
+                return current_y - start_y;
+                }
+
+        }
+    }
 }
 
-DrawMap::~DrawMap()
+
+void DrawMap::MapDraw(int mapNumber)
 {
+    switch (mapNumber)
+    {
+    case 0:
+    {
+        system("cls");
+        for(int i = 0; i<10; i++)
+            cout << "DrawMap : Map No. "<<mapNumber<<endl;
+        _getch();
+        break;
+    }
+    default:
+        break;
+    }
 }

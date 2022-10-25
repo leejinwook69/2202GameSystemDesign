@@ -6,13 +6,12 @@
 class DrawMap
 {
 public:
-	DrawMap();
 
 	//콘솔 생성용 cols = width, lines = height, title = title
 	void Init();
 
 	/// <summary>
-	/// 콘솔창의 커서를 원하는 위치로 보내주는 함수 
+	/// 커서를 원하는 위치로 보내주는 함수 
 	/// </summary>
 	inline void gotoxy(int x, int y)
 	{
@@ -29,7 +28,12 @@ public:
 	/// <summary>
 	/// 화면에 메뉴를 그린다
 	/// </summary>
-	void MenuDraw(int start_x, int start_y);
-	~DrawMap();
+	int MenuDraw(int start_x, int start_y);
+
+	/// <summary>
+	/// 화면에 맵을 그린다
+	/// </summary>
+	void MapDraw(int mapNumber);
+
 };
 
