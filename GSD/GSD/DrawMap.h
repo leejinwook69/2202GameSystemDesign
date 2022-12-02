@@ -35,5 +35,10 @@ public:
 	/// </summary>
 	void MapDraw(int mapNumber);
 
+	/// <summary>
+	/// 첫번째 맵 정보를 받아온다
+	/// </summary>
+	void Map1(char map[21][21]);
+
 };
 

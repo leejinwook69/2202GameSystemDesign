@@ -18,7 +18,7 @@ int main()
 		{
 			case 0:
 			{
-				dm.MapDraw(0);
+				dm.MapDraw(1);
 				break;
 			}
 			case 1:
