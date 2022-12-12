@@ -57,19 +57,13 @@ int DrawMap::MenuDraw(int start_x, int start_y)
 
     COLOR(2);
     gotoxy(start_x/2, start_y/2);
-    cout << " ::::::::     ::::::::    :::::::::  ";
-    gotoxy(start_x / 2, start_y / 2+1);
-    cout << ":+:    :+:   :+:    :+:   :+:    :+: ";
-    gotoxy(start_x / 2, start_y / 2+2);
-    cout << "+:+          +:+          +:+    +:+ ";
-    gotoxy(start_x / 2, start_y / 2+3);
-    cout << ":#:          +#+          +#+    +:+ ";
-    gotoxy(start_x / 2, start_y / 2+4);
-    cout << "+#+   +#+#   +#+          +#+    +#+ ";
-    gotoxy(start_x / 2, start_y / 2+5);
-    cout << "#+#    #+#   #+#    #+#   #+#    #+# ";
-    gotoxy(start_x / 2, start_y / 2+6);
-    cout << " ########     ########    ######### ";
+    cout << "   __   ____  __________  __   __ _______  ____";
+    gotoxy(start_x / 2, start_y / 2 + 1);
+    cout << "  / /  / __ O/ __/_  __/ /  |/  / _ /_  / / __/";
+    gotoxy(start_x / 2, start_y / 2 + 2);
+    cout << " / /__/ /_/ /O O  / /   / /|_/ / __ |/ /_/ _/  ";
+    gotoxy(start_x / 2, start_y / 2 + 3);
+    cout << "/____/O____/___/ /_/   /_/  /_/_/ |_/___/___/  ";
 
     //메뉴 출력
     gotoxy(start_x-2, start_y);
@@ -120,58 +114,24 @@ int DrawMap::MenuDraw(int start_x, int start_y)
 }
 
 
-void DrawMap::MapDraw(int mapNumber)
+void DrawMap::MapDraw(char map[21][21])
 {
-    char map[21][21];
-
-    switch (mapNumber)
+    system("cls");
+    for (int i = 0; i < 20; i++)
     {
-    case 1:
-    {
-        Map1(map);
-        system("cls");
-        for (int i = 0; i < 20; i++)
+        for (int j = 0; j < 20; j++)
         {
-            for (int j = 0; j < 20; j++)
-            {
-                if (map[i][j] == '0')
-                    cout << "  ";
-                else if (map[i][j] == '1')
-                    cout << "■ ";
-
-            }
-            cout << endl;
+            if (map[i][j] == '0')
+                cout << "  ";
+            else if (map[i][j] == '1')
+                cout << "■";
+            else if (map[i][j] == '2')
+                cout << "P ";
+            else if (map[i][j] == '3')
+                cout << "★";
         }
-            _getch();
-        break;
+        cout << endl;
     }
-    default:
-        break;
-    }
-}
-
-void DrawMap::Map1(char map[21][21])
-{
-    strcpy_s(map[0] , "11111111111111111111");
-    strcpy_s(map[1] , "11111111111111111111");
-    strcpy_s(map[2] , "11001000000100000011");
-    strcpy_s(map[3] , "11001001000100100011");
-    strcpy_s(map[4] , "11001001000100100011");
-    strcpy_s(map[5] , "11001001000100100011");
-    strcpy_s(map[6] , "11001001000100100011");
-    strcpy_s(map[7] , "11001001000100100011");
-    strcpy_s(map[8] , "11001001000100100011");
-    strcpy_s(map[9] , "11001001000100100011");
-    strcpy_s(map[10], "11001001000100100011");
-    strcpy_s(map[11], "11001001000100100011");
-    strcpy_s(map[12], "11001001000100100011");
-    strcpy_s(map[13], "11001001000100100011");
-    strcpy_s(map[14], "11001001000100100011");
-    strcpy_s(map[15], "11001001000100100011");
-    strcpy_s(map[16], "11001001000100100011");
-    strcpy_s(map[17], "11000001000000100011");
-    strcpy_s(map[18], "11111111111111111111");
-    strcpy_s(map[19], "11111111111111111111");
 }
 
 

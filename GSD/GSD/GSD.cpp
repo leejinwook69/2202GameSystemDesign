@@ -1,11 +1,12 @@
 #include "DrawMap.h"
+#include "GameManager.h"
 #include "KeyControl.h"
 
 int main()
 {
 	DrawMap dm;
 	KeyControl kc;
-
+	GameManager gm;
 	char key;
 
 	dm.Init();
@@ -18,7 +19,7 @@ int main()
 		{
 			case 0:
 			{
-				dm.MapDraw(1);
+				gm.GameLoop();
 				break;
 			}
 			case 1:
