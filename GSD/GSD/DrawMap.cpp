@@ -197,11 +197,11 @@ void DrawMap::MapDraw(char map[21][21])
             if (map[i][j] == '0')
                 cout << "  ";
             else if (map[i][j] == '1')
-                cout << "бс ";
+                cout << "бс";
             else if (map[i][j] == '2')
                 cout << "P ";
             else if (map[i][j] == '3')
-                cout << "б┌ ";
+                cout << "б┌";
             else if (map[i][j] == '4')
                 cout << "! ";
         }
