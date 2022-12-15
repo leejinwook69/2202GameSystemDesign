@@ -352,7 +352,7 @@ void init_Stage() {
 	fopen_s(&fp, stage_List[game_Stage], "r"); // 현재 스테이지 txt열기
 	char buffer[MAX] = { 0, };
 
-	fread(buffer, 1, 1000, fp); //전체 읽기
+	fread(buffer, 1, MAX, fp); //전체 읽기
 	char* str = NULL;
 	char* temp = strtok_s(buffer, ",\n", &str); //, \n을 기준으로 문자열 자르기
 	int stage_index = 0;

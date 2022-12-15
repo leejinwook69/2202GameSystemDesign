@@ -169,7 +169,7 @@ int stage5()
     if (game5Clear)
     {
         system("cls");
-        char str1[] = "Stage 5 Clear !!  ";
+        char str1[] = "Stage Clear !!  ";
         char str2[] = "다음 스테이지로 이동합니다";
         game_Function(SCREEN_WIDTH / 2 - 10, SCREEN_HEIGHT / 2, str1, 14);
         game_Function(SCREEN_WIDTH / 2 - 6, SCREEN_HEIGHT / 2 + 4, str2, 14);

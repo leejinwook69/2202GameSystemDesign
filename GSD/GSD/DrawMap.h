@@ -19,7 +19,7 @@ public:
 		SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), Pos);
 
 	}
-
+	int TextDraw(int start_x, int start_y);
 	/// <summary>
 	/// 화면에 그리드를 그린다
 	/// </summary>
