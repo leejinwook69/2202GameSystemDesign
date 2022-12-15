@@ -140,13 +140,23 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="DrawMap.cpp" />
+    <ClCompile Include="Stage2.cpp" />
+    <ClCompile Include="Stage2Main.cpp" />
     <ClCompile Include="GSD.cpp" />
     <ClCompile Include="KeyControl.cpp" />
+    <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="Stage4.cpp" />
+    <ClCompile Include="Stage5.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DrawMap.h" />
+    <ClInclude Include="Stage2.h" />
+    <ClInclude Include="Stage2Main.h" />
     <ClInclude Include="HeaderSet.h" />
     <ClInclude Include="KeyControl.h" />
+    <ClInclude Include="GameManager.h" />
+    <ClInclude Include="Stage4.h" />
+    <ClInclude Include="Stage5.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

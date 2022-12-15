@@ -1,4 +1,4 @@
-﻿  DrawMap.cpp
+﻿  GameManager.cpp
 D:\DevResult\git\ProJ\2202GameSystemDesign\GSD\GSD\DrawMap.h(18,17): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
 D:\DevResult\git\ProJ\2202GameSystemDesign\GSD\GSD\DrawMap.h(18,20): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
   GSD.vcxproj -> D:\DevResult\git\ProJ\2202GameSystemDesign\GSD\x64\Debug\GSD.exe

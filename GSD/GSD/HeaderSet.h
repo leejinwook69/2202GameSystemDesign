@@ -5,6 +5,7 @@
 #include <iostream>
 #include <Windows.h>
 #include <conio.h>
+#include <cstring>
 
 //Define: KEY
 #define UP 0

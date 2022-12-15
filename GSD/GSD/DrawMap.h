@@ -33,12 +33,13 @@ public:
 	/// <summary>
 	/// 화면에 맵을 그린다
 	/// </summary>
-	void MapDraw(int mapNumber);
+	void MapDraw(char map[21][21]);
 
 	/// <summary>
 	/// 첫번째 맵 정보를 받아온다
 	/// </summary>
 	void Map1(char map[21][21]);
+	void Map2(char map[21][21]);
 
 };
 
