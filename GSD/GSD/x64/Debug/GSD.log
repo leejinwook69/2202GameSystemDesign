@@ -1,3 +1,26 @@
-﻿  Stage2Main.cpp
+﻿  DrawMap.cpp
+D:\DevResult\git\ProJ\2202GameSystemDesign\GSD\GSD\DrawMap.h(18,17): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+D:\DevResult\git\ProJ\2202GameSystemDesign\GSD\GSD\DrawMap.h(18,20): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+  Stage2.cpp
+  Stage2Main.cpp
+  GSD.cpp
+D:\DevResult\git\ProJ\2202GameSystemDesign\GSD\GSD\DrawMap.h(18,17): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+D:\DevResult\git\ProJ\2202GameSystemDesign\GSD\GSD\DrawMap.h(18,20): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+D:\DevResult\git\ProJ\2202GameSystemDesign\GSD\GSD\GSD.cpp(8,13): warning C4101: 'kc': unreferenced local variable
+D:\DevResult\git\ProJ\2202GameSystemDesign\GSD\GSD\GSD.cpp(10,7): warning C4101: 'key': unreferenced local variable
+  KeyControl.cpp
+  GameManager.cpp
+D:\DevResult\git\ProJ\2202GameSystemDesign\GSD\GSD\DrawMap.h(18,17): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+D:\DevResult\git\ProJ\2202GameSystemDesign\GSD\GSD\DrawMap.h(18,20): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+  Stage4.cpp
+  Stage5.cpp
+D:\DevResult\git\ProJ\2202GameSystemDesign\GSD\GSD\Stage5.cpp(156,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  StoryAscii.cpp
+D:\DevResult\git\ProJ\2202GameSystemDesign\GSD\GSD\DrawMap.h(18,17): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+D:\DevResult\git\ProJ\2202GameSystemDesign\GSD\GSD\DrawMap.h(18,20): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
+  Generating Code...
+D:\DevResult\git\ProJ\2202GameSystemDesign\GSD\GSD\Stage5.cpp(181): warning C4715: 'stage5': not all control paths return a value
+D:\DevResult\git\ProJ\2202GameSystemDesign\GSD\GSD\Stage4.cpp(187): warning C4715: 'stage4': not all control paths return a value
+D:\DevResult\git\ProJ\2202GameSystemDesign\GSD\GSD\KeyControl.cpp(18): warning C4715: 'KeyControl::KeyInput': not all control paths return a value
 D:\DevResult\git\ProJ\2202GameSystemDesign\GSD\GSD\Stage2Main.cpp(100): warning C4715: 'stage2': not all control paths return a value
   GSD.vcxproj -> D:\DevResult\git\ProJ\2202GameSystemDesign\GSD\x64\Debug\GSD.exe
